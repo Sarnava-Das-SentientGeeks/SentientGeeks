@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--Putting script inside the head tag but not recommended-->
+        <script defer>
+            function myFuntion(){
+                document.getElementById('jsinhead').innerHTML='Paragraph change.';
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Demo JavaScript in Head</h2>
+
+        <p id="jsinhead">A Paragraph</p>
+        <button type="button" onclick="myFuntion()">Try it</button>
+        <hr>
+
+        <p id="jsinbody">A second paragraph</p>
+        <button type="button" onclick="myFuntion()">Click</button>
+        <script>
+            function myFunction(){
+                document.getElementById("jsinbody").innerHTML="Second paragraph changed.";
+            }
+        </script>
+
+        <p id="external">This js is in external script</p>
+        <button type="button" onclick="myFunction()">Click for external script</button>
+        
+        <!--External JS-->
+        <script src="myScript.js"></script>
+        
+    </body>
+</html>
