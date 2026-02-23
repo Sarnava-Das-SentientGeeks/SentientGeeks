@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Attribut Selector in CSS</title>
+        <style>
+            a[target]{
+                background-color: yellow;
+            }
+            p[target=special]{
+                background-color: dodgerblue;
+            }
+            [title~="flower"]{
+                border: 5px solid yellow;
+            }
+            *{
+                text-align:center;
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>CSS [attribute] Selector</h2>
+
+        <p target="special">With target attribute</p>
+        <p title="flower">With title attribute </p>
+
+        <a href="https://www.w3schools.com" target="_blank">W3schools.com</a>
+        <a href="https://www.w3schools.com/css/">CSS</a>
+        <a href="https://www.w3schools.com/html/" target="_blank">HTML</a>
+    </body>
+</html>

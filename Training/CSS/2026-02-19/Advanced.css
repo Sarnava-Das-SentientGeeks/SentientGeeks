@@ -1,0 +1,14 @@
+#borderimg{
+    border: 10px solid transparent;/*required for border-image*/
+    border-image:url(border.png) 30 round;/*border-image-source, border-image-slice and border-image-repeat respectively*/  
+}
+
+#ex1{
+    background-image: url(paper.png),url(paper1.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+}
+
+#ex2{
+    background: url(paper.png) right bottom no-repeat, url;
+}

@@ -1,0 +1,22 @@
+p{
+    padding:5px;
+    outline-style:solid;
+    outline-color:green;
+
+}
+p.ex1{
+    outline-width:thin;
+    outline-color:red;
+}
+p.ex2{
+    border:1px solid black;
+    outline: 7px dashed blue;
+    border-radius:10px;
+    outline-offset:15px;
+}
+p.ex3{
+    border:1px solid black;
+    outline: 7px dashed blue;
+    border-radius:10px;
+    outline-offset:-5px;
+}

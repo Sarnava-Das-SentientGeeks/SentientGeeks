@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form in HTML</title>
+        <!--internal CSS-->
+        <style>
+            body{background-color: powderblue;}
+            h1{color:blue; font-family:verdana;font-size:300%;text-align:center;}
+            p{color:red; font-family:courier;font-size:160%;border:2px solid powderblue;padding:30px;margin:50px;}
+            div{text-align:center;}
+        </style>
+
+        <!--External CSS-->
+        <link rel="stylesheet" href="/html/styles.css">
+    </head>
+    <body>
+        <h1>This is a form</h1>
+        <div>
+            <form action="/action_page.php" target="_parent">
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

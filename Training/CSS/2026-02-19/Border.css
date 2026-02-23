@@ -1,0 +1,36 @@
+p.dotted{border-style:dotted;}
+p.dashed{border-style: dashed;}
+
+p.one{
+    border-style:solid;
+    border-width:medium;
+    border-width:thick;
+    border-color:red;
+    border-radius:25px;
+}
+#div1{
+    border-radius:25px;
+    background-color: aliceblue;
+    background: url(paper.png) rgba(240, 248, 255, 0.5);
+}
+p.two{
+    border-width: 20px 5px; /*20px on top and bottom, 5px on left and right*/
+    border-color: hsl(0,100%,50%);
+}
+
+p.three{
+    border-width: 25px 10px 4px 35px;/*top, right, bottom and left respectively*/
+    border-color: red green blue yellow;/*top, right, bottom and left respectively*/
+}
+
+p{
+    border-top-style: dotted;
+    border-right-style:solid;
+    border-bottom-style: dashed;
+    border-left-style:solid;
+}
+
+#div1{
+    border-bottom: 0;
+    border-radius:25px;
+}

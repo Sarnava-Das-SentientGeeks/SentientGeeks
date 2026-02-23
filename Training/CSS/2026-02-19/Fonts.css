@@ -1,0 +1,10 @@
+div{
+    font-family:"Times New Roman", Times, serif;
+    font-style:oblique;
+    font-weight:bolder;
+}
+.p1{
+    font-family:"Lucida Console", "Courier New", monospace;
+    font-style:italic;
+    font-weight:lighter;
+}

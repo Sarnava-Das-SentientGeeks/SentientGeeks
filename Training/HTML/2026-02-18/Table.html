@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <style>
+            table,th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                border-radius: 10px;
+                border-spacing: 30;
+            }
+            th,td{
+                background-color:#96D4D4;
+                border-radius:5px;
+                border-style: dotted;
+                border-color: dodgerblue;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 40px;
+            }
+            tr:nth-child(even){
+                background-color: #D0E4F5;
+            }
+            td:nth-child(even),th:nth-child(even){
+                background-color: #D0E4F5;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width:100%">
+            <tr>
+                <th style="width:70%">Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr style="height:200px">
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+        <br>
+         <table style="width:100%">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+    </body>
+</html>

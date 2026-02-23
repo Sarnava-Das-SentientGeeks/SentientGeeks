@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FlexBox</title>
+        <style>
+            .container{
+                display: flex;
+                display:inline-flex;
+                flex-direction: row;
+                background-color: dodgerblue;
+                flex-wrap:wrap-reverse;
+                flex-wrap:wrap;
+                flex-flow:row wrap;
+                justify-content: center;/*it aligns the flex items horizontally*/
+                align-items: center;/*it aligns the flex items vertically*/
+                align-content: stretch;/*It only align the flex lines when flex items wrap onto multiple lines*/
+
+            }
+            /*true centering the flex items*/
+            .flex-container{
+                display:flex;
+                height:400px;
+                justify-content:center;
+                align-items: center;
+            }
+            .container div{
+                background-color: #f1f1f1;
+                margin:10px;
+                padding:20px;
+                font-size:30px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div style="order:3;flex-grow:1;">Box 1</div>
+            <div style="order:1;flex-grow:4">Box 2</div>
+            <div style="order:2;flex-shrink:2">Box 3</div> 
+             <div style="flex-basis:250px">Box 4</div>
+            <div style="flex: 1 0 500px;">Box 5</div>
+            <!--<div>Box 6</div>    
+             <div>Box 7</div>
+            <div>Box 8</div>
+            <div>Box 9</div>    
+             <div>Box 10</div>
+            <div>Box 11</div>
+            <div>Box 12</div>  
+            <div>Box 13</div>
+             <div>Box 14</div>     
+             <div>Box 15</div>
+             <div>Box 16</div>      -->
+        </div>
+    </body>
+</html>

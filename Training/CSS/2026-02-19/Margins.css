@@ -1,0 +1,20 @@
+p{
+    margin-top: 100px;
+}
+div{
+    margin: 25px 50px 75px 100px;/*top, right, bottom and left respectively*/   
+}
+
+p.one{
+    margin:25px 50px 75px;/*top, right and bottom respectively. The left margin will be the same as the right margin which is 50px*/
+}
+
+div.one{
+    width:300px;
+    margin:auto; /*This will center the div horizontally within its parent container*/
+    border:1px solid black;
+}
+
+p.ex1{
+    margin-left:inherit;
+}

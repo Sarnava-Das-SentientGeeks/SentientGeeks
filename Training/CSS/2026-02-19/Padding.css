@@ -1,0 +1,22 @@
+div{
+    padding-top:50px;
+    padding-right:25px;
+    padding-bottom:35px;
+    padding-left:65px;
+    
+    padding: 50px 25px 35px 65px;/*short-hand property*/
+}
+
+/* Here width of the div is 300px but with padding the width becomes 350px */
+div.one{
+    width:300px;
+    padding:25px;
+    box-sizing:border-box; /*This will include the padding and border in the total width and height of the element, so the width of the div will remain 300px even with padding*/
+}
+
+div.two{
+    width:350px;
+    padding:40px 20px;
+    border:23px solid black;
+    box-sizing:content-box; /*This is the default value. The width of the div will be 350px but with padding the total width becomes 410px*/
+}

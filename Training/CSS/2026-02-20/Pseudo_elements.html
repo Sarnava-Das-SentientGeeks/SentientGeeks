@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            h3::before{
+                content:url(smiley.gif);
+            }
+            ::marker{
+                color:red;
+                font-size:23px;
+            }
+            ::selection{
+                color:red;
+                background: yellow;
+            }
+            dialog::backdrop{
+                background-color:lightgreen;
+            }
+            button{
+                font-size: 15px;
+                padding:5px 15px;
+            }
+            p::first-line{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Using ::marker</h2>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        </ul>
+        <hr>
+
+        <h2>Using ::selection</h2>
+
+        <p>Select some text on this page.</p>
+        <hr>
+
+        <button id="dialogBtn">Show dialog</button>
+        <dialog id="myDialog">
+            <form method="dialog">
+                 <p>The background behind this dialog, is a backdrop.</p>
+                <button>Close dialog</button>
+            </form>
+        </dialog>
+    
+    <script>
+        const dialogBtn = document.getElementById('dialogBtn');
+        const myDialog = document.getElementById('myDialog');
+        dialogBtn.addEventListener('click', () => myDialog.showModal());
+    </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+body{
+    /* At first the color is visible then the image sits on top of the color */
+    background-color: lightblue;
+    opacity: 0.8;
+    background-image: url("paper.gif");
+    background-repeat: repeat-x;
+    background-position: right top;
+    background-attachment: fixed;
+    background: lightblue url("paper.gif") repeat-x right top fixed;
+}
+h1{
+    background-color: green;
+}
+div{
+    background-color:lightblue;
+    
+    /* This line adds both background-color and opacity */
+    background: rgba(173, 216, 230, 0.5);
+    background-repeat: no-repeat;
+}
+

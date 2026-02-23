@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Forms in HTML</title>
+        <style>
+            body{
+                background: rgba(163, 24, 24, 0.4) repeat;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <form action="/submit_form.php" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" readonly><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" disabled><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <hr>
+
+        <form>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+        </form>
+        <hr>
+
+        <form>
+            <label for="datemax">Enter a data before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+            <label for="datemin">Enter a data after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+        </form>
+        <hr>
+
+        <!--Datetime-local-->
+        <form>
+            <label for="birthdaytime">Birthday Time:</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        </form>
+        <hr>
+
+        <!--Image input-->
+        <form>
+            <input type="image" src="/html/submit_button.png" alt="Submit" width="48" height="48">
+        </form>
+        <hr>
+
+        <!--File input-->
+        <form>
+            <label for="myfile">Choose a file:</label>
+            <input type="file" id="myfile" name="myfile">
+        </form>
+        <hr>
+
+        <!--Regular expression for the input field's value-->
+        <form>
+            <label for="country_code">Country Code:</label>
+            <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+
+        </form>
+
+    </body>
+</html>

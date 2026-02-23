@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display in CSS</title>
+        <style>
+            ul{
+                list-style-type:none;
+                margin:0;
+                padding:0;
+            }
+            li{
+                display:inline;
+            }
+            span.ex1{
+                display:block;
+            }
+            p{
+                background-color: blue;
+                padding:10px;
+            }
+            p.ex1{
+                display:none; }
+            p.ex2{
+                display:inline;         }
+            p.ex3{display:block;}
+            p.ex4{display:inline-block;}
+            p.ex5{display:flex;}
+            p.ex6{display:grid;}
+            #panel{
+                display:none;
+            }
+        </style>
+       
+    </head>
+    <body>
+        <p onclick="myFunction()">Click to show panel</p>
+        <p>Display a list of links as a horizontal menu</p>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+
+        </ul>
+        <hr>
+
+        <span class="ex1">A display property with</span> <span>a value of "block" results in</span> <span>a line break between each span elements.</span>
+    
+        <h1>The display Property</h1>
+
+        <h2>display: none:</h2>
+        <p style="display: none;">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+        </p>
+
+        <h2>display: inline:</h2>
+        <p class="ex2">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+        </p>
+
+        <h2>display: block:</h2>
+        <p class="ex3">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+        </p>
+
+        <h2>display: inline-block:</h2>
+        <p class="ex4">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+        </p>
+
+        <h2>display: flex:</h2>
+        <p class="ex5">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+        </p>
+
+        <h2>display: grid:</h2>
+        <p class="ex6">
+        <span>Text 1</span>
+        <span>Text 2</span>
+        <span>Text 3</span>
+        </p>
+
+        
+     <script defer>
+            function myFunction(){
+                document.getElementById("panel").style.display="block";
+            }
+        </script>        
+    </body>
+</html>
