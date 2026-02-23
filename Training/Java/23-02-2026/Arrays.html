@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <hr>
+        <p id="length"></p>
+        <hr>
+        <p id="toString Method"></p>
+        <hr>
+        <p id ="shift elements"></p>
+        <hr>
+        <p id="last element"></p>
+
+
+       <script>
+        const cars = new Array("Saab","Volvo","BMW");
+        const fruits=["Banana","Orange","Apple","Mango"];
+
+        //displaying the last element
+        let fav_fruit=fruits.at(-1);
+        document.getElementById('last element').innerHTML=fav_fruit;
+
+        //converting array to string
+        let myList=fruits.toString();
+        document.getElementById('toString Method').innerHTML=myList;
+
+        //displaying car array and length of car array
+        document.getElementById('demo').innerHTML=cars;
+        document.getElementById('length').innerHTML=cars.length;
+       
+        //displaying element which is shifted out
+        document.getElementById('shift elements').innerHTML=fruits.shift();
+        document.getElementById('shift elements').innerHTML=fruits.unshift("Lemon");
+        //document.getElementById('demo').innerHTML=fruits;
+       </script>
+    </body>
+</html>
