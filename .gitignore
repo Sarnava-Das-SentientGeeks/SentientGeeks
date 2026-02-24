@@ -1,2 +1,9 @@
 *.docx
 *.txt
+bin/
+*.user
+*.suo
+*.db
+*.sqlite
+*.json
+# appsettings.Development.json
