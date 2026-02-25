@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        //Named function expression
+        const myFunction= function name(x,y){
+            return x*y;
+        };
+        //anonymous function expression
+        const myTest1= function(x,y){return x+y;};
+
+        //arrow function
+        const myTest=(x,y)=>x*y;
+        let result = myTest(5,6);
+        document.getElementById("demo").innerHTML="The result is: <br>"+result;
+
+        //Function Constructor
+        const FuncConstructor=new Function("x","y","return x * y");
+        
+        //Object Method
+        const obj={
+            fullName: function (){
+                return "Hello World";
+            }
+
+        }
+    </script>
+</body>
+</html>
