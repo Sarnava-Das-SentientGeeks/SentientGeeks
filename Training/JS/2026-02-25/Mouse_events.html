@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo">Move the mouse in this window!</p>
     <div id="box"
 style="width:200px;height:100px;padding:16px;border:1px solid #000;">
 Move mouse over this box!
@@ -17,6 +18,10 @@ Move mouse over this box!
     box.addEventListener("mouseout",function(){
         box.innerHTML="Mouse is out!";
     });
+
+    document.addEventListener("mousemove",function(event){
+        
+    })
 </script>
 </body>
 </html>
