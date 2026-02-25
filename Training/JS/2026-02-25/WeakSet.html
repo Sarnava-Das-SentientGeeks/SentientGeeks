@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let mySet= new WeakSet();
+            
+            let myObj={fname:"John",lname:"Doe"};
+
+            mySet.add(myObj);
+
+            mySet.delete(myObj);
+
+            let answer=mySet.has(myObj);
+            document.getElementById("demo").innerHTML="Do I have object"+answer;
+        </script>
+    </body>
+</html>

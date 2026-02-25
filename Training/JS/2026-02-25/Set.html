@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="answer"></p>
+    <script>
+        //Set Size
+        const mySet= new Set(["a","b","c"]);
+        document.getElementById("demo").innerHTML="The set size is:"+mySet.size;
+        
+        const myIterator=mySet.values();
+        //Print elements
+        let txt="";
+        for(const x of mySet){
+            txt+=x;
+        }
+
+        let answer=mySet.has("d");
+        document.getElementById("answer").innerHTML=answer;
+
+    </script>
+</body>
+</html>
