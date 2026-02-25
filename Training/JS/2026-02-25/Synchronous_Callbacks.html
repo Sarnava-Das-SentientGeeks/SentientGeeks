@@ -6,13 +6,14 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo"></p>
     <script>
         document.getElementById("demo").innerHTML=txt;
         const numbers=[45,4,9,16,25];
         let txt="";
         numbers.forEach(myFunction);
         function myFunction(value){
-            txt+=value+"&nbsp";
+            txt+=value+"<br>";
         }
     </script>
 </body>
