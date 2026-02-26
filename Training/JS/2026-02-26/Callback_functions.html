@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        setTimeout(myFunction,3000);
+        function myFunction(){
+            document.getElementById("demo").innerHTML="Hello World";
+        }
+
+        const numbers=[45,4,9,16,25];
+        let txt="";
+        numbers.forEach(myForEach);
+        function myForEach(value,index,array){
+            txt+="The &nbsp"+value+"&nbsp is at &nbsp"+index+"<br>";
+        }
+
+        const numbers1=[1,2,3,6];
+        const numbers2 =numbers1.map(myMapFunction);
+        function myMapFunction(value,index,array){
+            return value*2;
+        }
+
+    </script>
+</body>
+</html>

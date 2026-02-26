@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let answer =myFunction(4,3);
+        //Function Declaration
+        function myFunction(x,y){
+            return x*y;
+        }
+
+        //Named Function Expression
+        const named_Expression=function name(x,y){
+            return x*y;
+        }
+
+        //Anonymous Function Expression
+        const anonymous_Expression=function (x,y){
+            return x*y;
+        }
+
+        //Arrow function
+        const arrow_Function=(x,y)=> x*y;
+
+        //Function Constructor
+        const constructor_Function= new Function("x","y","return x*y");
+
+        //Object Method
+        const obj={
+            firstName:"John",
+            lastName:"Doe",
+            object_method: function(x,y){
+                return this.firstName+" "+this.lastName+"The result is"+x*y;
+            }
+        };
+        let result_obj=obj.object_method(5,6);
+    </script>
+</body>
+</html>

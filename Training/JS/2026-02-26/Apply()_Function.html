@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person1={name:"John"};
+        const person2={name:"Pual"};
+        const person3={name:"Ringo"};
+
+        function greet(greeting){
+            return greeting+" "+this.name;
+
+        }
+
+        greet.apply(["Hello"],person3);
+    </script>
+</body>
+</html>
