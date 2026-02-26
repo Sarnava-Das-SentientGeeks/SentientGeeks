@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create Object literal
+        const person={
+            firstName:"John",
+            lastName:"Doe",
+            age:50,
+            eyeColor:blue,
+        };
+
+        //Create Object using new keyword
+        const person1=new Object({
+            message:"Hello World",
+        })
+        
+        //Creating Object using create() method 
+        const man=Object.create(person);
+        man.firstName="Peter";
+
+        //Using fromEntries() creating object
+        const fruits=[
+            ["apples",300],
+            ["pears",900],
+            ["bananas",500]
+        ];
+        const myObj=Object.fromEntries(fruits);
+    </script>
+</body>
+</html>

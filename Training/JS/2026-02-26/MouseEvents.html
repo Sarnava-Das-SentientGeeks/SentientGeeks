@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Events</h1>
+<h2>The mousposition Event</h2>
+
+<p id="demo">Move the mouse in this window!</p>
+<div id="box" style="width:200px;height:100px;padding:16px;border:1px solid #000;">
+<script>
+    const box =document.getElementById("box");
+    box.addEventListener("mouseover",function(){
+        box.innerHTML="Mouse is over me!";
+    });
+
+
+// Let document listen for mousemove
+document.addEventListener("mousemove", function (event) {
+  document.getElementById("demo").innerHTML =
+  "X: " + event.clientX + " Y: " + event.clientY;
+});
+</script>
+
+</body>
+</html>
