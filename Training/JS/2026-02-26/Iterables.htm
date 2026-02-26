@@ -6,15 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="btn">Start</button>
-    <p id="demo">Wait!</p>
-
-    <p id="clock"></p>
     <script>
-      setTimeout(myFunction,3000);
-      function myFunction(){
-        document.getElementById("demo").innerHTML="Hello World!";
-      }
+    const letters = ["a","b","c"];
+
+    let text="";
+    for(const x of letters){
+        text+=x+"<br>";
+    }
+    document.getElementById("demo").innerHTML=text;
     </script>
 </body>
 </html>

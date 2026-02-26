@@ -8,17 +8,11 @@
 <body>
     <p id="demo"></p>
     <script>
-        let myMap=new WeakMap();
-        let myObj={fname:"John",lname:"Doe"};
-
-        myMap.set(myObj,"secret");
-        myObj=null;
-
-
         let text="";
-        const visitsCount= new WeakMap();
 
-        const John={name:"John",age:40};
+        const persons=new WeakSet();
+
+        const John = {name:"John", age:40};
         const Paul = {name:"Paul", age:41};
         const Ringo = {name:"Ringo", age:42};
         const George = {name:"George", age:43};
@@ -26,16 +20,17 @@
         track(Paul);
         track(Ringo);
         track(Paul);
-        track(Paul);
-        track(John);
 
         function track(visitor){
-            let count=visitsCount.get(visitor) || 0;
-            count++;
-            visitsCount.set(visitor,count);
-            text+=visitor.name+", age"+visitor.age+", has visited"+count+" time(s).<br>";
+            if(persons.has(visitor)){
+                text+=visitor.name+"is visiting again.<br>";
+            }
+            else{
+                persons.add(visitor);
+                text+=visitor.name+", age"+visitor.age+", is visiting for the first time<br>";            }
         }
         document.getElementById("demo").innerHTML=text;
+
 
     </script>
 </body>
