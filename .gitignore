@@ -6,4 +6,6 @@ bin/
 *.db
 *.sqlite
 *.json
+*.map
+*.config
 # appsettings.Development.json
