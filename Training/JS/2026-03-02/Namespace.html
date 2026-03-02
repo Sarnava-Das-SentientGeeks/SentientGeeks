@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo"></p>
+    <script type="module">
+        import * as math from "./math_module.js";
+        let myPi= math.PI;
+        let result= math.add(2,3);
+
+        document.getElementById("demo").innerHTML="myPi is: "+myPi+"<br>Result is: "+ result;
+
+    </script>
+</body>
+</html>
