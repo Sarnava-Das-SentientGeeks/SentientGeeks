@@ -28,5 +28,5 @@ abstract class sample{
     }
     let test_obj=new test("TutorialsPoint",999);
     test_obj.demo();
-    test_obj.save();
+    test_obj.save()
 

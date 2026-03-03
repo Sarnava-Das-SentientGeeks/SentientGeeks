@@ -1,4 +1,4 @@
-//Generic interface for a function
+
 interface func_interface<T,U>{
     (input:T):U;
 }
